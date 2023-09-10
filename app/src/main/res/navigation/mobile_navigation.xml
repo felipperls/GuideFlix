@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_lancamentos">
+
+    <fragment
+        android:id="@+id/navigation_lancamentos"
+        android:name="com.example.guideflixprojeto.ui.fragmentos.LancamentosFragment"
+        android:label="@string/menu_bottom_bar_lancamentos"
+        tools:layout="@layout/fragment_lancamentos" />
+
+    <fragment
+        android:id="@+id/navigation_filmes"
+        android:name="com.example.guideflixprojeto.ui.fragmentos.FilmesFragment"
+        android:label="@string/menu_bottom_bar_filmes"
+        tools:layout="@layout/fragment_filmes" />
+
+    <fragment
+        android:id="@+id/navigation_series"
+        android:name="com.example.guideflixprojeto.ui.fragmentos.SeriesFragment"
+        android:label="@string/menu_bottom_bar_series"
+        tools:layout="@layout/fragment_series" />
+
+    <fragment
+        android:id="@+id/navigation_descobrir"
+        android:name="com.example.guideflixprojeto.ui.fragmentos.DescobrirFragment"
+        android:label="@string/menu_bottom_bar_descobrir"
+        tools:layout="@layout/fragment_descobrir" />
+
+    <fragment
+        android:id="@+id/navigation_person"
+        android:name="com.example.guideflixprojeto.ui.fragmentos.PerfilFragment"
+        android:label="@string/menu_bottom_bar_perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+</navigation>

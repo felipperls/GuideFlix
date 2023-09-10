@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".TelaInicioActivity"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cinza_transparente"/>
+
+    <TextView
+
+        android:id="@+id/txtbemvindo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Bem_vindo"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:textColor="@color/white_gray"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imagem_tela_bem_vindo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/app_name"
+        android:padding="20dp"
+        android:src="@drawable/app_image"
+        app:layout_constraintBottom_toTopOf="@id/txtGerenciador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbemvindo"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtGerenciador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Series"
+        android:textAlignment="center"
+        android:textColor="@color/white_gray"
+        android:textSize="30sp"
+        android:fontFamily="serif"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/containerEndTelaEntrada"
+        app:layout_constraintTop_toBottomOf="@id/imagem_tela_bem_vindo"
+        android:layout_marginBottom="10dp"
+        />
+
+    <View
+        android:id="@+id/containerEndTelaEntrada"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/container_background_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEscolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/escolha"
+        android:textAlignment="center"
+        android:textColor="@color/white_gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerEndTelaEntrada"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/button_white_gray"
+        android:paddingBottom="5dp"
+        android:text="@string/Login_botao"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtEscolha"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingBottom="5dp"
+        android:textSize="20sp"
+        android:text="@string/Cadastro_botao"
+        app:layout_constraintBottom_toBottomOf="@id/containerEndTelaEntrada"
+        app:layout_constraintTop_toBottomOf="@id/btnlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_white_gray"
+        android:textColor="@color/gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

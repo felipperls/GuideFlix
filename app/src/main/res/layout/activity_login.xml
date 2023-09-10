@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <View
+        android:id="@+id/containerTop"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/container_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/app_image"
+        app:layout_constraintTop_toTopOf="@id/containerTop"
+        app:layout_constraintStart_toStartOf="@id/containerTop"
+        app:layout_constraintEnd_toEndOf="@id/containerTop"
+        app:layout_constraintBottom_toBottomOf="@id/containerTop" />
+
+    <TextView
+        android:id="@+id/txtloginmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white_gray"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/containerTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editEmail"
+        android:fontFamily="serif"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/backgroundedittext"
+        android:drawableEnd="@drawable/icon_email"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtloginmain"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editSenha"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundedittext"
+        android:hint="@string/hint_senha"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/gray"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btEntrar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/icon_eye"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/background_button_enabled"
+        android:padding="15dp"
+        android:text="@string/txt_button_entrar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/txtTelaCadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editSenha"
+        tools:ignore="TextSizeCheck"/>
+
+    <TextView
+        android:id="@+id/txtTelaCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/txt_cadastro_login"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/containerEndTelaLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btEntrar"
+        tools:ignore="TextSizeCheck"/>
+
+
+    <View
+        android:id="@+id/containerEndTelaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/container_background_purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastroLogin"
+        android:layout_width="149dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/txt_Button_LoginCadastro"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/containerEndTelaLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/containerEndTelaLogin"
+        tools:ignore="TextSizeCheck"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

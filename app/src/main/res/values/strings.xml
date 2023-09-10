@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GuideFlix</string>
+    <string name="Bem_vindo"> Bem vindo!</string>
+    <string name="Series"> Seu gerenciador de filmes e séries.</string>
+    <string name="escolha"> Escolha uma opção</string>
+
+    <string name="Login_botao"> Fazer Login</string>
+    <string name="Cadastro_botao">Cadastrar-se</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="txt_button_entrar">Entrar</string>
+    <string name="txt_cadastro_login">Não possui conta?</string>
+
+    <string name="login_cadastro">Já possui conta?</string>
+    <string name="txt_Button_LoginCadastro">Cadastre-se</string>
+    <string name="nome">Nome Completo</string>
+    <string name="login">Login</string>
+    <string name="cadastro">Cadastro</string>
+
+    <string name="menu_bottom_bar_lancamentos">Lançamentos</string>
+    <string name="menu_bottom_bar_filmes">Filmes</string>
+    <string name="menu_bottom_bar_series">Séries</string>
+    <string name="menu_bottom_bar_descobrir">Descobrir</string>
+    <string name="menu_bottom_bar_perfil">Perfil</string>
+    <string name="title_activity_app">AppActivity</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
