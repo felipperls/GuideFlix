@@ -8,12 +8,15 @@
     <string name="Cadastro_botao">Cadastrar-se</string>
     <string name="hint_email">E-mail</string>
     <string name="hint_senha">Senha</string>
-    <string name="txt_button_entrar">Entrar</string>
+    <string name="txt_button_entrar">ENTRAR</string>
     <string name="txt_cadastro_login">Não possui conta?</string>
+    <string name="email_exemplo">email@email.com</string>
+    <string name="senha_exemplo">*********</string>
 
     <string name="login_cadastro">Já possui conta?</string>
     <string name="txt_Button_LoginCadastro">Cadastre-se</string>
-    <string name="nome">Nome Completo</string>
+    <string name="username">Nome de Usuário</string>
+    <string name="username_exemplo">User123</string>
     <string name="login">Login</string>
     <string name="cadastro">Cadastro</string>
 
