@@ -24,6 +24,8 @@ class AppActivity : AppCompatActivity() {
 
         // Configurar o BottomNavigationView para navegar com o NavController
         navView.setupWithNavController(navController)
+
+        window.statusBarColor = 0xFF373435.toInt()
     }
 }
 

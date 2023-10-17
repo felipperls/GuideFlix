@@ -11,10 +11,8 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"/>
+            android:id="@+id/action_splashFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -45,4 +43,16 @@
         android:id="@+id/appActivity"
         android:name="com.example.guideflixprojeto.AppActivity"
         android:label="AppActivity" />
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.guideflixprojeto.ui.fragmentos.autenticacao.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
 </navigation>

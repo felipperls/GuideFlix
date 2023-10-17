@@ -27,9 +27,11 @@
     <string name="menu_bottom_bar_perfil">Perfil</string>
     <string name="title_activity_app">AppActivity</string>
 
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="series_hint">Principais séries</string>
+    <string name="destaques_hint">Destaques</string>
+    <string name="filmes_hint">Principais Filmes</string>
+    <string name="outros">Veja mais</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
